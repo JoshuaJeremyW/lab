@@ -1,8 +1,8 @@
 # SPR100 Lab01B — Introduction to Our Toolbox (Linux)
 
-**Student Name:** [Your Name]  
-**Student ID:** [Your ID]  
-**Completion Date:** [YYYY-MM-DD]
+**Student Name:** JJ Williams 
+**Student ID:** jwilliams137 
+**Completion Date:** Sept.13 2025
 
 ## Lab Overview
 This lab practices core Linux commands, Markdown documentation, and Git/GitHub submission workflow using Ubuntu or the Matrix server.
@@ -28,3 +28,6 @@ SPR100_Labs/
 
 ## Reflection
 [Write 2–4 sentences about what you learned, what worked well, and one challenge you faced.]
+
+
+
