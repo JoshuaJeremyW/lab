@@ -13,20 +13,20 @@
 ### 1.1 VM Configuration Summary
 - **Hypervisor Name:** [VMware Workstation Pro]
 - **Hypervisor Version:** [Version number]
-- **CPU Cores:** [Number of CPU cores allocated to this VM]
-- **Memory:** [Memory (RAM) allocated]
-- **Storage:** [Hard disk capacity and current used hard disk size]
-- **Network:** [Network connection type]
+- **CPU Cores:** 2
+- **Memory:** 4096 MB
+- **Storage:** Hard disk capacity :60 GB Current used:33 GB 
+- **Network:** NAT
 
 ### 1.2 VM Import and Startup Process
 - **VM File Source:** [\\mydrive\courses\SPR100\Win10]
-- **Import Method:** [Describe how you imported win_nov22.ova]
-- **VM Name:** [win10-[your username]]
-- **Storage Path:** [Path on your external SSD drive]
-- **Startup Time:** [Time from power-on to login screen]
+- **Import Method:** Downloaded win_nov22.ova to SSD file amd imported it into vmware.
+- **VM Name:** win-10jwilliams137
+- **Storage Path:** D:\SPR100-VM\win10-jwilliams137.vmdk
+- **Startup Time:** 15 seconds
 
 ### 1.3 Initial System Configuration
-- **Password Change Process:** [Describe how you changed the Student account password]
+- **Password Change Process:** [Describe how you changed the Student account password] 
 - **Git Installation:** [Describe the Git for Windows installation process using winget]
 
 ---
