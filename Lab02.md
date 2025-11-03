@@ -11,7 +11,7 @@
 ## Part 1: Virtual Machine Setup and Configuration
 
 ### 1.1 VM Configuration Summary
-- **Hypervisor Name:** [VMware Workstation Pro]
+- **Hypervisor Name:** win10-jwilliams137
 - **Hypervisor Version:** [Version number]
 - **CPU Cores:** 2
 - **Memory:** 4096 MB
@@ -36,34 +36,84 @@
 ### 2.1 CPU Analysis Results
 
 #### System Information (msinfo32)
-- **Processor Name:** [Full processor name from System Summary]
-- **Number of Cores:** [Physical cores from Processor section]
-- **Logical Processors:** [Total logical processors from Processor section]
+- **Processor Name:** AMD Ryzen 7 7730U with Radeon Graphics
+- **Number of Cores:** 2
+- **Logical Processors:** 2
 
 #### Task Manager CPU Analysis
-- **Current CPU Utilization:** [Percentage from Performance tab]
-- **Number of Virtual Processors:** [Count from Task Manager]
-- **CPU Base Speed:** [Base speed from Task Manager]
+- **Current CPU Utilization:** 2%
+- **Number of Virtual Processors:** 2
+- **CPU Base Speed:** 2.00 GHz
 - **CPU Current Speed:** [Current operating speed from Task Manager]
-- **System Up Time:** [How long the OS has been running]
-- **CPU Utilization Observations:** [Describe what you observed during monitoring]
+- **System Up Time:** 0:01:30:02
+- **CPU Utilization Observations:** Obsereved occasonial spikes in CPU utilization.
 
 ### 2.2 Memory Analysis Results
 
 #### System Information Memory Details
-- **Total Physical Memory:** [Amount from msinfo32 System Summary]
-- **Available Physical Memory:** [Amount from msinfo32 System Summary]
-- **Total Virtual Memory:** [Amount from msinfo32 System Summary]
-- **Available Virtual Memory:** [Amount from msinfo32 System Summary]
+- **Total Physical Memory:** 4
+- **Available Physical Memory:** 2.06 GB 
+- **Total Virtual Memory:** 4 GB
+- **Available Virtual Memory:** 3.43 GB
 - **Virtual Memory Explanation:** [Explain what Total and Available Virtual Memory means in your own words]
 
 #### PowerShell Memory Commands Output
-**Physical Memory Information:**[Paste the output of: Get-WmiObject -Class Win32_PhysicalMemory]
+**Physical Memory Information:**
+__GENUS              : 2
+__CLASS              : Win32_PhysicalMemory
+__SUPERCLASS         : CIM_PhysicalMemory
+__DYNASTY            : CIM_ManagedSystemElement
+__RELPATH            : Win32_PhysicalMemory.Tag="Physical Memory 0"
+__PROPERTY_COUNT     : 36
+__DERIVATION         : {CIM_PhysicalMemory, CIM_Chip,
+                       CIM_PhysicalComponent, CIM_PhysicalElement...}
+__SERVER             : DESKTOP-4H9E4CT
+__NAMESPACE          : root\cimv2
+__PATH               : \\DESKTOP-4H9E4CT\root\cimv2:Win32_PhysicalMemor
+                       y.Tag="Physical Memory 0"
+Attributes           : 0
+BankLabel            : RAM slot #0
+Capacity             : 4294967296
+Caption              : Physical Memory
+ConfiguredClockSpeed : 4800
+ConfiguredVoltage    :
+CreationClassName    : Win32_PhysicalMemory
+DataWidth            : 64
+Description          : Physical Memory
+DeviceLocator        : RAM slot #0
+FormFactor           : 8
+HotSwappable         :
+InstallDate          :
+InterleaveDataDepth  :
+InterleavePosition   :
+Manufacturer         : VMware Virtual RAM
+MaxVoltage           :
+MemoryType           : 2
+MinVoltage           :
+Model                :
+Name                 : Physical Memory
+OtherIdentifyingInfo :
+PartNumber           : VMW-4096MB
+PositionInRow        :
+PoweredOn            :
+Removable            :
+Replaceable          :
+SerialNumber         : 00000001
+SKU                  :
+SMBIOSMemoryType     : 3
+Speed                :
+Status               :
+Tag                  : Physical Memory 0
+TotalWidth           : 64
+TypeDetail           : 128
+Version              :
+PSComputerName       : DESKTOP-4H9E4CT
 
 - **Document:** __PATH and Capacity values from the output
-
+**__PATH** \\DESKTOP-4H9E4CT\root\cimv2:Win32_PhysicalMemory.Tag="Physical Memory 0"
+**Capacity** 4294967296
 **Available Memory Information:**
-[Paste the output of: Get-Counter "\Memory\Available MBytes"]
+\\desktop-4h9e4ct\memory\available mbytes : 2169
 - **Available Memory:** [Document the Available MBytes value]
 
 ### 2.3 System Performance Monitoring Results
@@ -85,9 +135,9 @@
 - **Performance Patterns Observed:** [Describe any patterns, spikes, or notable changes]
 
 #### Resource Monitor Observations
-- **Peak CPU Usage:** [Highest observed percentage from resmon]
-- **Peak Memory Usage:** [Highest observed usage from resmon]
-- **Resource Usage During Activities:** [Describe what happened when you performed different tasks while monitoring]
+- **Peak CPU Usage:** 3%
+- **Peak Memory Usage:** 50%
+- **Resource Usage During Activities:** CPU, Disk, and memory all spiked.
 
 #### Performance Monitor Data Collector Graph
 [Put your `performance_chart.gif` image here]
